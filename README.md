@@ -8,7 +8,8 @@ A simple app to master the basics of React Native (state management, internation
 
 ## General info
 
-this app brings together all the basic principles of creating an application. We created this application to apply our knowledge of React Native.
+this app brings together all the basic principles of creating an application. 
+We created this application to apply our knowledge of React Native.
 You can find the concept of:
 
 - Internationalization (Manage the language used according to that of the device)
@@ -25,6 +26,7 @@ You can find the concept of:
 ## Technologies
 Project is created with:
 * React Native
+* Expo
 * React Navigation -> Navigation
 * React Native Paper -> Components and Theming
 * React i18 next -> Internationalization
