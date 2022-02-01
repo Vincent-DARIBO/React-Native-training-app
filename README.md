@@ -1,6 +1,8 @@
 # React-Native-training-app
 A simple app to master the basics of React Native (state management, internationalization, theming...)
-Created by @Vincent-DARIBO & @taniabezancon
+Created by [@Vincent-DARIBO](https://github.com/Vincent-DARIBO) and [@taniabezancon](https://github.com/taniabezancon).
+
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
 ## Table of contents
 * [General info](#general-info)
