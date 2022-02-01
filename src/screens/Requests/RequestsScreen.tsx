@@ -24,23 +24,16 @@ export default function RequestsScreen({ navigation }: Props) {
   );
   const url = useURL();
 
-  console.log('URL-------->', url);
-  // console.log(Date.now(), 'render', 'data', data);
-
   useEffect(() => {
-    console.log(Date.now(), 'useEffect');
     const loadData = async () => {
-      console.log(Date.now(), 'loadData');
       try {
         const response = await axios.get(url, {
           headers: {
             'X-API-Key': '697d47a0',
           },
         });
-        console.log(Date.now(), 'fetch', 'ok');
         const items = response.data as ListItem[];
         setData(items);
-        console.log('items:', items);
         setDisplayedItems(filterList(items, 'opened'));
       } catch (error) {
         console.log(Date.now(), 'fetch', 'error', error);
@@ -60,7 +53,6 @@ export default function RequestsScreen({ navigation }: Props) {
     );
   }
   function onItemClick(item: ListItem): void {
-    console.log(`you clicked on card ${item.id}`);
     navigation.navigate('RequestDetails', item);
   }
 
@@ -70,11 +62,9 @@ export default function RequestsScreen({ navigation }: Props) {
       titleRight={t('filters.requests.allRequests')}
       onPressLeft={() => {
         setDisplayedItems(filterList(data, 'opened'));
-        console.log(Date.now(), displayedItems);
       }}
       onPressRight={() => {
         setDisplayedItems(filterList(data));
-        console.log(Date.now(), displayedItems);
       }}
       listData={displayedItems}
       onItemClick={onItemClick}

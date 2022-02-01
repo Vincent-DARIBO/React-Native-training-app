@@ -28,7 +28,6 @@ export default function TeamsScreen({ navigation }: Props) {
     'to do'
   );
   function onItemClick(item: ListItem) {
-    console.log(`you clicked on card ${item.id}`);
     navigation.navigate('TeamDetails', item);
   }
   return (
@@ -37,11 +36,9 @@ export default function TeamsScreen({ navigation }: Props) {
       titleRight={t('filters.actions.closed')}
       onPressLeft={() => {
         setDisplayedItems(filterList(list, 'to do'));
-        console.log(Date.now(), displayedItems);
       }}
       onPressRight={() => {
         setDisplayedItems(filterList(list, 'closed'));
-        console.log(Date.now(), displayedItems);
       }}
       listData={displayedItems}
       onItemClick={onItemClick}

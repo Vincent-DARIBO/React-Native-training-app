@@ -28,7 +28,6 @@ export default function RequestDetailsScreen({ route }: Props) {
     overdueOn,
     'datePicker.format'
   );
-  console.log('navParams.status=', status);
   return (
     <ScrollView style={styles.container} testID={DETAILS_SCREEN}>
       <DetailsCard

@@ -18,7 +18,6 @@ export default function OfflineNotice() {
   //Ce que on va faire, ce qui va etre checker
   React.useEffect(() => {
     if (isOnline === true) {
-      console.log('NetworkStatus:', isOnline);
       setVisible(false);
     } else {
       setVisible(true);

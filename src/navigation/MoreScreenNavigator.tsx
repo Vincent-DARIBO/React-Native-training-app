@@ -8,8 +8,8 @@ import OnBehalfScreen from '../screens/MoreScreens/OnBehalfScreen';
 import SettingsScreen from '../screens/MoreScreens/SettingsScreen';
 import ViewsScreen from '../screens/MoreScreens/ViewsSreen';
 import MoreScreen from '../screens/MoreScreens/MoreScreen';
+import Dashboard from '../screens/MoreScreens/Dashboard';
 import { MoreScreenNavigatorParamsList } from './types/index';
-import Dashboard from 'screens/MoreScreens/Dashboard';
 
 const Stack = createStackNavigator<MoreScreenNavigatorParamsList>();
 

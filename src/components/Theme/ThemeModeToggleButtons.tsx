@@ -48,7 +48,6 @@ const ThemeModeToggleButtons = ({ themeMode, setThemeMode }: Props) => {
             icon="dip-switch"
             onPress={() => {
               setThemeMode('Auto');
-              console.log('toggle Auto pressed !');
             }}
             accessibilityLabel="Set theme mode to auto"
           />
@@ -64,7 +63,6 @@ const ThemeModeToggleButtons = ({ themeMode, setThemeMode }: Props) => {
             icon={icon.moon}
             onPress={() => {
               setThemeMode('Dark');
-              console.log('toggle Dark pressed !');
             }}
             accessibilityLabel="Set theme mode to dark"
           />
@@ -80,7 +78,6 @@ const ThemeModeToggleButtons = ({ themeMode, setThemeMode }: Props) => {
             icon={icon.sun}
             onPress={() => {
               setThemeMode('Light');
-              console.log('toggle Light pressed !');
             }}
             accessibilityLabel="Set theme mode to light"
           />
@@ -98,7 +95,6 @@ const ThemeModeToggleButtons = ({ themeMode, setThemeMode }: Props) => {
             icon={icon.pencil}
             onPress={() => {
               setThemeMode('Purple');
-              console.log('toggle Purple pressed !');
             }}
             accessibilityLabel="Set theme mode to purple"
           />

@@ -34,11 +34,9 @@ export default function AssignementsScreen({ navigation }: Props) {
       titleRight={t('action.subStatus.completed')}
       onPressLeft={() => {
         setDisplayedItems(filterList(list, 'to do'));
-        console.log(Date.now(), displayedItems);
       }}
       onPressRight={() => {
         setDisplayedItems(filterList(list, 'completed'));
-        console.log(Date.now(), displayedItems);
       }}
       listData={displayedItems}
       onItemClick={onItemClick}

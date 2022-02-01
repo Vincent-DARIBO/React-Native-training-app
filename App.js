@@ -11,7 +11,6 @@ import OfflineNotice from './src/components/Network/OfflineNotice';
 export default function App() {
   const { theme, themeMode, setThemeMode } = useThemeState();
 
-  console.log(Date.now(), 'themeMode', themeMode);
 
   return (
     <ThemeModeProvider

@@ -7,7 +7,6 @@ export default function useVisibility() {
 
   React.useEffect(() => {
     setVisibility(!isConnected);
-    console.log('DEVICE CONNECTED ? --------->', isConnected);
   }, [isConnected]);
   return { visibility, setVisibility };
 }

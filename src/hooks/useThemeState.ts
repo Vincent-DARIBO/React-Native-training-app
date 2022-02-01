@@ -8,7 +8,6 @@ const THEME_MODE_KEY = 'THEME_MODE_KEY';
 
 function useThemeFromStorage(setThemeMode: (themeMode: string) => void): void {
   React.useLayoutEffect(() => {
-    console.log('Load theme mode from storage');
     const getThemeFromStorage = async () => {
       try {
         const themeModeFromStorage = await AsyncStorage.getItem(THEME_MODE_KEY);
@@ -29,7 +28,6 @@ export function useThemeState() {
   useThemeFromStorage(setThemeMode);
   const [DefaultTheme, DarkTheme, PurpleDarkTheme] = Themes;
 
-  console.log(Date.now(), 'themeMode', themeMode);
   let theme = DefaultTheme;
   if (themeMode === 'Auto') {
     theme = colorScheme === 'light' ? DefaultTheme : DarkTheme;
