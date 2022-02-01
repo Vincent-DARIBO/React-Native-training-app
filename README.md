@@ -16,7 +16,7 @@ You can find the concept of:
 - Navigation
 - UI/UX
 - Testing with jest
-- Management of the date and its format
+- Date management and formatting
 - Mode online/offline
 - State management
 - The backend with the API to communicate with the front-end
