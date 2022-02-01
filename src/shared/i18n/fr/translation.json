@@ -1,0 +1,416 @@
+{
+  "date": {
+    "format": "DD-MM-YYYY"
+  },
+  "amount": "montant : ",
+  "to": "à",
+  "by": "par",
+  "me": "moi",
+  "ok": "Ok",
+  "on": "Oui",
+  "off": "Non",
+  "goOnlineLoadList": "Merci de vous connecter pour charger la liste",
+  "goOnlineLoadData": "Merci de vous connecter pour charger les données",
+  "cancel": "Annuler",
+  "close": "Fermer",
+  "closesScreen": "Fermer l'écran",
+  "showFullContent": "Afficher le contenu complet dans un nouvel écran",
+  "XonBehalfOfY": "en tant que",
+  "system": "Système",
+  "download": "Télécharger",
+  "help": "Aide",
+  "workflow": "Workflow",
+  "assign": "Affecter",
+  "reassign": "Réaffecter",
+  "launch": "Lancer",
+  "relaunch": "Relancer",
+  "helpLink": "Lien",
+  "visit": "Visiter",
+  "helpEmail": "Contact",
+  "continue": "Continuer",
+  "next": "Continuer",
+  "back": "Retour",
+  "reset": "Réinitialiser",
+  "signIn": "Se connecter",
+  "assignMyself": "Affecter à moi-même",
+  "assignColleague": "Sélectionner un utilisateur",
+  "cancelSelfAsignment": "Annuler affectation",
+  "name": "Nom",
+  "test": "en test",
+  "status": "Statut",
+  "process": "Processus",
+  "participant": "Participant",
+  "always": "En tout temps",
+  "apply": "Appliquer",
+  "confirm": "Confirmation",
+  "genericErrorMessage": "Unexpected error occurred.",
+  "signout": "Se déconnecter",
+  "others": "Autres",
+  "action": {
+    "screenTitle": "Action n°",
+    "notAssigned": "Non affectée",
+    "request": "Demande",
+    "action": "Action",
+    "createdBy": "Créée par",
+    "createdOn": "Créée le",
+    "closedOn": "Clôturée le",
+    "overdueOn": "À faire pour le",
+    "assignedBy": "Affectée par",
+    "assignedAt": "Affectée le",
+    "notStarted": "Non démarrée",
+    "closed": "Clôturée",
+    "open": "En cours",
+    "subStatus": {
+      "running": "démarrée",
+      "completed": "terminée",
+      "aborted": "annulée",
+      "notStarted": "non démarrée"
+    },
+    "requestTitle": "Demande n°",
+    "error": {
+      "integrityAlertTitle": "Avertissement",
+      "integrityAlertImmutable": "L'action est déjà clôturée!",
+      "integrityAlertNonExisting": "L'action n'existe plus.",
+      "genericMessage": "Une erreur est survenue durant le traitement de l’action.",
+      "genericActionFetchMessage": "Une erreur inattendue est survenue lors de la récupération des détails de l’action",
+      "genericListMessage": "Une erreur inattendue est survenue lors de la récupération des actions"
+    },
+    "listItem": {
+      "accessibilityLabel": "Action {{test}} avec le numéro de demande {{requestNumber}}. {{title}}. Assignée {{assignee}}.",
+      "accessibilityLabelWithoutAssignee": "Action {{test}} avec le numéro de demande {{requestNumber}}. {{title}}. Non affectée.",
+      "accessibilityHint": "Ouvrir l'écran de détails de l'action"
+    },
+    "details": {
+      "launchWebFormAccessibilityHint": "Ouvrir le formulaire web de lancement d'action",
+      "launchAccessibilityHint": "Lancer l'action",
+      "assignAccessibilityHint": "Afficher un panneau en bas avec des options à sélectionner",
+      "workflowAccessibilityHint": "Ouvrir le workflow de l'action dans un nouvel écran",
+      "helpAccessibilityHint": "Ouvrir l'aide de l'action dans un nouvel écran",
+      "selectUserToAssign": "Ouvrir un écran où vous pouvez sélectionner un utilisateur à assigner",
+      "requestDetailsAccessibilityHint": "Ouvrir l'écran de détails de la demande",
+      "requestDetailsAccessibilityLabel": "Numéro de demande"
+    }
+  },
+  "request": {
+    "request": "Demande",
+    "screenTitle": "Demande n°",
+    "actions": "Actions",
+    "workflow": "Workflow",
+    "comments": "Commentaires",
+    "closed": "Clôturée",
+    "open": "En cours",
+    "help": "Aide",
+    "cancel": "Annuler demande",
+    "delete": "Supprimer demande",
+    "requestParent": "Parent",
+    "createdOn": "Créée le",
+    "overdueOn": "À faire pour le",
+    "closedOn": "Closed on",
+    "subStatus": {
+      "running": "démarrée",
+      "completed": "terminée",
+      "aborted": "annulée",
+      "notStarted": "non démarrée"
+    },
+    "alert": {
+      "delete": "Voulez-vous supprimer cette demande?",
+      "cancel": "Voulez-vous annuler cette demande?"
+    },
+    "details": {
+      "associatedActionsAccessbilityHint": "Ouvrir un écran avec les actions associées à une demande",
+      "workflowAccessibilityHint": "Ouvrir le workflow de la demande dans un nouvel écran",
+      "commentsAccessibilityHint": "Ouvrir les commentaires de la demande dans un nouvel écran",
+      "helpAccessibilityHint": "Ouvrir l'aide de la demande dans un nouvel écran",
+      "requestDetailsAccessibilityHint": "Ouvrir l'écran de détails de la demande",
+      "requestDetailsAccessibilityLabel": "Numéro de demande"
+    },
+    "listItem": {
+      "accessibilityLabel": "Demande {{test}} avec le numéro {{requestNumber}}. {{title}}. Initiée {{requester}}.",
+      "accessibilityHint": "Ouvrir l'écran de détails de la demande"
+    },
+    "error": {
+      "title": "Avertissement",
+      "genericMessage": "An error occurred while processing the request.",
+      "genericRequestFetchMessage": "Une erreur inattendue est survenue lors de la récupération des détails de la demande",
+      "genericListMessage": "Une erreur inattendue est survenue lors de la récupération des demandes"
+    }
+  },
+  "quickApproval": {
+    "submit": "Soumettre",
+    "addCommentPlaceholder": "Laisser un commentaire"
+  },
+  "assignUser": {
+    "screenTitle": "Affecter",
+    "clearsNameTextField": "Effacer le nom dans le champ texte"
+  },
+  "filters": {
+    "actions": {
+      "toDo": "À faire",
+      "open": "En cours",
+      "closed": "Clôturées",
+      "completed": "Terminées",
+      "all": "Toutes",
+      "myTeam": "Mon équipe",
+      "allTeams": "Toutes les équipes",
+      "myActions": "Mes actions",
+      "allActions": "Toutes",
+      "myAssignmentsTodo": "À assigner par moi",
+      "assingedByMe": "Affectées par moi",
+      "notAssigned": "Non affectées",
+      "actionsFilters": "Filtres des actions",
+      "hidesActionsFilters": "Cacher les filtres des actions",
+      "showsActionsFilters": "Afficher les filtre des actions"
+    },
+    "requests": {
+      "open": "En cours",
+      "closed": "Clôturées",
+      "myRequests": "Mes demandes",
+      "allRequests": "Toutes",
+      "requestsFilters": "Filtres des demandes",
+      "hidesRequestsFilters": "Cacher les filtres des demandes",
+      "showsRequestsFilters": "Afficher les filtres des demandes"
+    },
+    "delegations": {
+      "all": "Toutes",
+      "active": "Actives"
+    },
+    "views": {
+      "all": "Toutes",
+      "my": "Mes vues",
+      "shared": "Vues partagées"
+    }
+  },
+  "orderListBy": {
+    "newest": "Plus récentes",
+    "oldest": "Plus anciennes"
+  },
+  "webView": {
+    "screenTitle": "Workflow",
+    "loadingError": "Erreur de chargement"
+  },
+  "networkStatus": {
+    "offline": "Vous êtes hors ligne"
+  },
+  "tabs": {
+    "requests": "Demandes",
+    "actions": "Actions",
+    "teams": "Équipes",
+    "assignments": "Affectations",
+    "more": "Plus"
+  },
+  "moreOptions": {
+    "label": "Plus d’options",
+    "show": "Afficher plus d’options",
+    "hide": "Cacher plus d’options"
+  },
+  "numberOfItems": {
+    "noItems": "Aucune %s",
+    "formatXOfYResource": "%d sur %d %s",
+    "formatXResource": "%d %s",
+    "action": "action",
+    "actions": "actions",
+    "assignment": "affectation",
+    "assignments": "affectations",
+    "myTeam": "Mon équipe",
+    "allTeams": "Toutes les équipes",
+    "teamsAction": "action d'équipe",
+    "teamsActions": "actions d'équipe",
+    "request": "demande",
+    "requests": "demandes",
+    "process": "processus",
+    "processes": "processus",
+    "delegation": "participant",
+    "delegations": "participants",
+    "view": "vue",
+    "views": "vues",
+    "noItemsUser": "Aucun %s",
+    "user": "utilisateur",
+    "users": "utilisateurs",
+    "delegator": "délégateur",
+    "delegators": "délégateurs"
+  },
+  "auth": {
+    "workflowgen": "WorkflowGen",
+    "chooseProvider": {
+      "screenTitle": "Authentifier avec"
+    },
+    "serverDetails": {
+      "urlEmpty": "L’adresse du serveur doit être renseignée.",
+      "urlInvalid": "Impossible d'établir une connexion avec le serveur. Veuillez vérifier votre adresse du serveur et réessayer plus tard.",
+      "screenTitle": "Entrez l'adresse du serveur WorkflowGen",
+      "inputPlaceholder": "Entrez l'adresse de WorkflowGen",
+      "inputSuggestion": "Exemple: https://localhost/wfgen"
+    },
+    "login": {
+      "screenTitle": "Connexion",
+      "enterUsernamePlaceholder": "Entrez votre nom d'utilisateur",
+      "enterPasswordPlaceholder": "Entrez le mot de passe",
+      "usernameEmpty": "Le nom d'utilisateur doit être rempli.",
+      "passwordEmpty": "Le mot de passe doit être rempli.",
+      "credentialsIncorrect": "Le nom d'utilisateur ou le mot de passe fourni est incorrect.",
+      "loginConnectionError": "La requête n'a pas retourné de résultats. Veuillez vérifier si le domaine, le nom d'utilisateur et le mot de passe sont valides.",
+      "serverError": "Le serveur a rencontré une erreur lors de l’exécution de l’opération demandée"
+    },
+    "auth0": {
+      "serverAddress": "Adresse du serveur WorkflowGen",
+      "clientId": "Auth0 Client App ID",
+      "domain": "Auth0 Domaine",
+      "audience": "Auth0 Audience"
+    },
+    "okta": {
+      "serverAddress": "Adresse du serveur WorkflowGen",
+      "clientId": "Okta Client App ID",
+      "metadataUrl": "Okta Metadata URL",
+      "audience": "Okta Audience"
+    },
+    "ms-identity-v2": {
+      "serverAddress": "Adresse du serveur WorkflowGen",
+      "clientId": "WorkflowGen Plus Client App ID",
+      "tenantId": "Microsoft Azure AD Tenant ID",
+      "audience": "Microsoft Azure AD Audience"
+    },
+    "adfs": {
+      "serverAddress": "Adresse du serveur WorkflowGen",
+      "clientId": "WorkflowGen Plus Client App ID",
+      "domain": "Microsoft AD FS Domaine",
+      "audience": "Microsoft AD FS Audience"
+    },
+    "oauthErrors": {
+      "OIDCConfigRetrievalFailure": "Unable to retrieve the OpenID Connect configuration. Please verify the credentials' information.",
+      "missingCredentials": "Les informations d'authentification sont incomplètes ou invalides."
+    }
+  },
+  "more": {
+    "views": {
+      "screenTitle": "Vues",
+      "opensViewsScreen": "Ouvrir l'écran des vues"
+    },
+    "delegations": {
+      "screenTitle": "Délégations",
+      "opensDelegationsScreen": "Ouvrir l'écran des délégations"
+    },
+    "onBehalfOf": {
+      "screenTitleActive": "Agir en tant que",
+      "screenTitleUnactive": "Agir en tant que",
+      "opensOnBehalfOfScreen": "Ouvrir l'écran en tant que"
+    },
+    "settings": {
+      "screenTitle": "Paramètres",
+      "opensSettingsScreen": "Ouvrir l'écran des réglages",
+      "serverVersion": "Version de WorkflowGen",
+      "appVersion": "Version de l'application",
+      "userAccount": "Compte d'utilisateur",
+      "name": "Nom",
+      "username": "Nom d'utilisateur",
+      "displayNames": "Afficher les noms",
+      "productDetails": "Détails du produit",
+      "list": "Liste",
+      "theme": "Thème",
+      "themeModes": {
+        "dark": "Sombre",
+        "light": "Clair",
+        "auto": "Auto"
+      }
+    }
+  },
+  "processes": {
+    "screenTitle": "Processus",
+    "showAll": "Tous",
+    "showByCategory": "Par catégories",
+    "launchNewRequest": "Lancer une nouvelle demande",
+    "displayWorkflow": "Afficher le workflow",
+    "showProcessHelp": "Afficher l'aide",
+    "error": {
+      "genericListMessage": "Une erreur inattendue est survenue durant la récupération des processus"
+    }
+  },
+  "requests": {
+    "inputPlaceholder": "Numéro de demande",
+    "noRequests": "Aucune demande",
+    "invalidFormat": "Numéro de demande invalide"
+  },
+  "delegations": {
+    "screenTitle": "Délégations",
+    "delegationEnded": "Terminée depuis le ",
+    "delegationInterval": "Du %s au %s",
+    "allParticipants": "Tous les participants"
+  },
+  "delegation": {
+    "screenTitle": "Délégation",
+    "allParticipants": "Tous les participants",
+    "allProcesses": "Tous les processus",
+    "delegate": "Déléguer",
+    "period": "Période",
+    "notify": "Notifier",
+    "delete": "Supprimer",
+    "delegatee": "Délégué(e)",
+    "toDefine": "À définir",
+    "from": "Depuis",
+    "to": "Jusqu'au",
+    "searchHintLabel": "Entrez au moins 2 caractères",
+    "status": {
+      "active": "Actif",
+      "forthcoming": "À venir",
+      "ended": "Terminé",
+      "inactive": "Inactif"
+    },
+    "delegateIconHint": "Ouvrir a écran où vous pouvez trouver un déléguer",
+    "periodIconHint": "Ouvrir un écran où vous pouvez choisir une période de délégation",
+    "deleteMutationHint": "Supprimer une délégation",
+    "notifyMutationHint": "Notifier un déléguer",
+    "notifySuccess": "Notifié avec succès",
+    "deleteDelegation": "Voulez-vous supprimer cette délégation?",
+    "error": {
+      "title": "Avertissement",
+      "genericMessage": "Une error est survenue pendant le traitement de la délégation.",
+      "genericListMessage": "Une erreur inattendue est survenue durant la récupération des délégations"
+    }
+  },
+  "dateFormat": {
+    "shortDate": "D MMM, YYYY"
+  },
+  "associatedActions": {
+    "screenTitle": "Actions"
+  },
+  "createDelegation": {
+    "screenTitle": "Rechercher un délégué",
+    "delegateTo": "Déléguer à",
+    "error": {
+      "genericListMessage": "Une erreur inattendue est survenue durant la récupération des délégués"
+    }
+  },
+  "datePicker": {
+    "begins": "Date de début",
+    "ends": "Date de terminaison",
+    "format": "D MMM, YYYY, hh:mm A"
+  },
+  "views": {
+    "screenTitle": "Vues",
+    "shared": "Partagée"
+  },
+  "teams": {
+    "screenTitle": "Équipes",
+    "error": {
+      "genericListMessage": "Une erreur inattendue est survenue lors de la récupération des actions d’équipes"
+    }
+  },
+  "comments": {
+    "screenTitle": "Commentaires",
+    "sending": "Envoyer ...",
+    "send": "Envoyer",
+    "delete": "Supprimer",
+    "placeholder": "Entrez un commentaire",
+    "refetch": "Rafraîchir les commentaires",
+    "error": {
+      "title": "Avertissement",
+      "genericMessage": "Une error est survenue lors du traitement du commentaire",
+      "genericListMessage": "Une error inattendue est survenue lors de la récupération des commentaires"
+    }
+  },
+  "assignments": {
+    "screenTitle": "Affectations",
+    "error": {
+      "genericListMessage": "Une erreur inattendue est survenue lors de la récupération des assignations"
+    }
+  }
+}

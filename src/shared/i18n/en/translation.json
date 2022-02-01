@@ -1,0 +1,414 @@
+{
+  "date": {
+    "format": "YYYY-MM-DD"
+  },
+  "amount": "amount: ",
+  "to": "to",
+  "by": "by",
+  "me": "me",
+  "ok": "Ok",
+  "on": "On",
+  "off": "Off",
+  "goOnlineLoadList": "Please go online to load the list",
+  "goOnlineLoadData": "Please go online to load the data",
+  "cancel": "Cancel",
+  "close": "close",
+  "closesScreen": "Closes a screen",
+  "showFullContent": "Shows full content in a new screen",
+  "XonBehalfOfY": "on behalf of",
+  "system": "System",
+  "download": "Download",
+  "help": "Help",
+  "workflow": "Workflow",
+  "assign": "Assign",
+  "reassign": "Reassign",
+  "launch": "Launch",
+  "relaunch": "Relaunch",
+  "helpLink": "Help link",
+  "visit": "Visit",
+  "helpEmail": "Help email",
+  "continue": "Continue",
+  "next": "Next",
+  "back": "Back",
+  "reset": "Reset",
+  "signIn": "Sign in",
+  "assignMyself": "Assign myself",
+  "assignColleague": "Select a user to assign",
+  "cancelSelfAsignment": "Cancel assignment",
+  "name": "Name",
+  "test": "test",
+  "status": "Status",
+  "process": "Process",
+  "participant": "Participant",
+  "always": "Always",
+  "apply": "Apply",
+  "confirm": "Confirm",
+  "genericErrorMessage": "Unexpected error occurred.",
+  "signout": "Sign out",
+  "others": "Others",
+  "action": {
+    "screenTitle": "Action #",
+    "notAssigned": "Not assigned",
+    "request": "Request",
+    "action": "Action",
+    "createdBy": "Created by",
+    "createdOn": "Created on",
+    "closedOn": "Closed on",
+    "overdueOn": "Overdue on",
+    "assignedBy": "Assigned by",
+    "assignedAt": "Assigned at",
+    "notStarted": "Not started",
+    "closed": "Closed",
+    "open": "Open",
+    "subStatus": {
+      "running": "running",
+      "completed": "completed",
+      "aborted": "cancelled",
+      "notStarted": "not started"
+    },
+    "requestTitle": "Request #",
+    "error": {
+      "integrityAlertTitle": "Warning!",
+      "integrityAlertImmutable": "This action was already closed.",
+      "integrityAlertNonExisting": "This action no longer exists.",
+      "genericMessage": "An error occurred while processing the action.",
+      "genericActionFetchMessage": "Unexpected error occurred while fetching action details",
+      "genericListMessage": "Unexpected error occurred while fetching actions"
+    },
+    "listItem": {
+      "accessibilityLabel": "{{test}} action with request number {{requestNumber}} and action number {{actionNumber}}. {{title}}. Assigned {{assignee}}.",
+      "accessibilityLabelWithoutAssignee": "{{test}} action with request number {{requestNumber}} and action number {{actionNumber}}. {{title}}. Not assigned.",
+      "accessibilityHint": "Opens action details screen"
+    },
+    "details": {
+      "launchWebFormAccessibilityHint": "Opens action launch web form",
+      "launchAccessibilityHint": "Launch action",
+      "assignAccessibilityHint": "Opens a bottom sheet with options to choose",
+      "workflowAccessibilityHint": "Opens action workflow in a new screen",
+      "helpAccessibilityHint": "Opens action help in a new screen",
+      "selectUserToAssign": "Opens a screen where you can select a user to assign",
+      "requestDetailsAccessibilityHint": "Opens request details screen",
+      "requestDetailsAccessibilityLabel": "Request number"
+    }
+  },
+  "request": {
+    "request": "Request",
+    "screenTitle": "Request #",
+    "actions": "Actions",
+    "workflow": "Workflow",
+    "comments": "Comments",
+    "closed": "Closed",
+    "open": "Open",
+    "help": "Help",
+    "cancel": "Cancel request",
+    "delete": "Delete request",
+    "requestParent": "Parent",
+    "createdOn": "Created on",
+    "overdueOn": "Overdue on",
+    "closedOn": "Closed on",
+    "subStatus": {
+      "running": "running",
+      "completed": "completed",
+      "aborted": "cancelled",
+      "notStarted": "not started"
+    },
+    "alert": {
+      "delete": "Do you want to delete this request?",
+      "cancel": "Do you want to cancel this request?"
+    },
+    "details": {
+      "associatedActionsAccessbilityHint": "Opens a screen with request assosciated actions",
+      "workflowAccessibilityHint": "Opens request workflow in a new screen",
+      "commentsAccessibilityHint": "Opens request comments in a new screen",
+      "helpAccessibilityHint": "Opens request help in a new screen",
+      "requestDetailsAccessibilityHint": "Opens request details screen",
+      "requestDetailsAccessibilityLabel": "Request number"
+    },
+    "listItem": {
+      "accessibilityLabel": "{{test}} request with number {{requestNumber}}. {{title}}. Requested {{requester}}",
+      "accessibilityHint": "Opens request details screen"
+    },
+    "error": {
+      "title": "Warning!",
+      "genericMessage": "An error occurred while processing the request.",
+      "genericRequestFetchMessage": "Unexpected error occurred while fetching request details",
+      "genericListMessage": "Unexpected error occurred while fetching requests"
+    }
+  },
+  "quickApproval": {
+    "submit": "Submit",
+    "addCommentPlaceholder": "Leave a comment"
+  },
+  "assignUser": {
+    "screenTitle": "Assign",
+    "clearsNameTextField": "Clears name text field"
+  },
+  "filters": {
+    "actions": {
+      "toDo": "To Do",
+      "open": "Open",
+      "closed": "Closed",
+      "completed": "Completed",
+      "all": "All",
+      "myTeam": "My team",
+      "allTeams": "All teams",
+      "myActions": "My actions",
+      "allActions": "All",
+      "myAssignmentsTodo": "To assign by me",
+      "assignedByMe": "Assigned by me",
+      "notAssigned": "Not assigned",
+      "actionsFilters": "Actions filters",
+      "hidesActionsFilters": "Hides actions filters",
+      "showsActionsFilters": "Shows actions filters"
+    },
+    "requests": {
+      "open": "Open",
+      "closed": "Closed",
+      "myRequests": "My requests",
+      "allRequests": "All",
+      "requestsFilters": "Requests filters",
+      "hidesRequestsFilters": "Hides requests filters",
+      "showsRequestsFilters": "Shows requests filters"
+    },
+    "delegations": {
+      "all": "All",
+      "active": "Active"
+    },
+    "views": {
+      "all": "All",
+      "my": "My views",
+      "shared": "Shared views"
+    }
+  },
+  "orderListBy": {
+    "newest": "Newest",
+    "oldest": "Oldest"
+  },
+  "webView": {
+    "screenTitle": "Workflow",
+    "loadingError": "Unable to load content"
+  },
+  "networkStatus": {
+    "offline": "You're offline"
+  },
+  "tabs": {
+    "requests": "Requests",
+    "actions": "Actions",
+    "teams": "Teams",
+    "assignments": "Assignments",
+    "more": "More"
+  },
+  "moreOptions": {
+    "label": "More options",
+    "show": "Show more options",
+    "hide": "Hide more options"
+  },
+  "numberOfItems": {
+    "noItems": "No %s",
+    "formatXOfYResource": "%d of %d %s",
+    "formatXResource": "%d %s",
+    "action": "action",
+    "actions": "actions",
+    "assignment": "assignment",
+    "assignments": "assignments",
+    "teamsAction": "team action",
+    "teamsActions": "team actions",
+    "request": "request",
+    "requests": "requests",
+    "process": "process",
+    "processes": "processes",
+    "delegation": "participant",
+    "delegations": "participants",
+    "view": "view",
+    "views": "views",
+    "noItemsUser": "No %s",
+    "user": "user",
+    "users": "users",
+    "delegator": "delegator",
+    "delegators": "delegators"
+  },
+  "auth": {
+    "workflowgen": "WorkflowGen",
+    "chooseProvider": {
+      "screenTitle": "Select your identity provider"
+    },
+    "serverDetails": {
+      "urlEmpty": "The URL field must be filled.",
+      "urlInvalid": "Unable to establish connection with server. Please verify that server address were correctly entered.",
+      "screenTitle": "Enter your WorkflowGen server address",
+      "inputPlaceholder": "Enter your WorkflowGen address",
+      "inputSuggestion": "Example: https://localhost/wfgen"
+    },
+    "login": {
+      "screenTitle": "Sign in",
+      "enterUsernamePlaceholder": "Enter your username",
+      "enterPasswordPlaceholder": "Enter your password",
+      "usernameEmpty": "The username field must be filled.",
+      "passwordEmpty": "The password field must be filled.",
+      "credentialsIncorrect": "The provided username or password is incorrect.",
+      "loginConnectionError": "The request did not return any results. Please verify if the provided URL, username and password are valid.",
+      "serverError": "The login failed due to an error on the server. Please try again later."
+    },
+    "auth0": {
+      "serverAddress": "WorkflowGen server address",
+      "clientId": "Auth0 Client App ID",
+      "domain": "Auth0 Domain",
+      "audience": "Auth0 Audience"
+    },
+    "okta": {
+      "serverAddress": "WorkflowGen server address",
+      "clientId": "Okta Client App ID",
+      "metadataUrl": "Okta Metadata URL",
+      "audience": "Okta Audience"
+    },
+    "ms-identity-v2": {
+      "serverAddress": "WorkflowGen server address",
+      "clientId": "WorkflowGen Plus Client App ID",
+      "tenantId": "Microsoft Azure AD Tenant ID",
+      "audience": "Microsoft Azure AD Audience"
+    },
+    "adfs": {
+      "serverAddress": "WorkflowGen server address",
+      "clientId": "WorkflowGen Plus Client App ID",
+      "domain": "Microsoft AD FS domain",
+      "audience": "Microsoft AD FS Audience"
+    },
+    "oauthErrors": {
+      "OIDCConfigRetrievalFailure": "Unable to retrieve the OpenID Connect configuration. Please verify the credentials' information.",
+      "missingCredentials": "The credentials are missing or incomplete."
+    }
+  },
+  "more": {
+    "views": {
+      "screenTitle": "Views",
+      "opensViewsScreen": "Opens Views screen"
+    },
+    "delegations": {
+      "screenTitle": "Delegations",
+      "opensDelegationsScreen": "Opens Delegations screen"
+    },
+    "onBehalfOf": {
+      "screenTitleActive": "On behalf of",
+      "screenTitleUnactive": "On Behalf",
+      "opensOnBehalfOfScreen": "Opens on behalf of screen"
+    },
+    "settings": {
+      "screenTitle": "Settings",
+      "opensSettingsScreen": "Opens Settings screen",
+      "serverVersion": "WorkflowGen version",
+      "appVersion": "Application version",
+      "userAccount": "User account",
+      "name": "Name",
+      "username": "Username",
+      "displayNames": "Display names",
+      "productDetails": "Product details",
+      "list": "List",
+      "theme": "Theme",
+      "themeModes": {
+        "dark": "Dark",
+        "light": "Light",
+        "auto": "Auto"
+      }
+    }
+  },
+  "processes": {
+    "screenTitle": "Processes",
+    "showAll": "All",
+    "showByCategory": "By category",
+    "launchNewRequest": "Launch new request",
+    "displayWorkflow": "Display workflow view",
+    "showProcessHelp": "Show process help",
+    "error": {
+      "genericListMessage": "Unexpected error occurred while fetching processes"
+    }
+  },
+  "requests": {
+    "inputPlaceholder": "Request number",
+    "noRequests": "No request",
+    "invalidFormat": "Invalid request number"
+  },
+  "delegations": {
+    "screenTitle": "Delegations",
+    "delegationEnded": "Over since ",
+    "delegationInterval": "From %s to %s",
+    "allParticipants": "All participants"
+  },
+  "delegation": {
+    "screenTitle": "Delegation",
+    "allParticipants": "All participants",
+    "allProcesses": "All processes",
+    "delegate": "Delegate",
+    "period": "Period",
+    "notify": "Notify",
+    "delete": "Delete",
+    "delegatee": "Delegatee",
+    "toDefine": "To define",
+    "from": "From",
+    "to": "To",
+    "searchHintLabel": "Enter at least 2 characters",
+    "status": {
+      "active": "Active",
+      "forthcoming": "Forthcoming",
+      "ended": "Ended",
+      "inactive": "Inactive"
+    },
+    "delegateIconHint": "Opens a screen where you can find a delegate",
+    "periodIconHint": "Opens a screen where you can choose the time period of a delegation",
+    "deleteMutationHint": "Deletes a delegation",
+    "notifyMutationHint": "Notifies a delegatee",
+    "notifySuccess": "Successfully notified",
+    "deleteDelegation": "Do you want to delete this delegation?",
+    "error": {
+      "title": "Warning!",
+      "genericMessage": "An error occurred while processing the delegation.",
+      "genericListMessage": "Unexpected error occurred while fetching delegations"
+    }
+  },
+  "dateFormat": {
+    "shortDate": "MMM D, YYYY"
+  },
+  "associatedActions": {
+    "screenTitle": "Actions"
+  },
+  "createDelegation": {
+    "screenTitle": "Find a delegate",
+    "delegateTo": "Delegate to",
+    "error": {
+      "genericListMessage": "Unexpected error occurred while fetching delegatees"
+    }
+  },
+  "datePicker": {
+    "begins": "Begins",
+    "ends": "Ends",
+    "format": "MMM D, YYYY, hh:mm A"
+  },
+  "views": {
+    "screenTitle": "Views",
+    "shared": "Shared"
+  },
+  "teams": {
+    "screenTitle": "Teams",
+    "error": {
+      "genericListMessage": "Unexpected error occured while fetching teams actions"
+    }
+  },
+  "comments": {
+    "screenTitle": "Comments",
+    "sending": "Sending ...",
+    "send": "Send",
+    "delete": "Delete",
+    "placeholder": "Type a comment",
+    "refetch": "Refetch comments",
+    "error": {
+      "title": "Warning!",
+      "genericMessage": "An error occurred while processing the comment.",
+      "genericListMessage": "Unexpected error occurred while fetching comments"
+    }
+  },
+  "assignments": {
+    "screenTitle": "Assignments",
+    "error": {
+      "genericListMessage": "Unexpected error occurred while fetching assignments"
+    }
+  }
+}

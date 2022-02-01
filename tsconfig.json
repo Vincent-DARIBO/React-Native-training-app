@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "baseUrl": "./src",
+    "jsx": "react-native"
+  },
+  "extends": "expo/tsconfig.base"
+}

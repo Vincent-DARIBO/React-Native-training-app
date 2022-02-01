@@ -1,0 +1,15 @@
+{
+  "extends": "@callstack",
+  "rules": {
+    "react-native/no-raw-text": 0,
+    "@kyleshevlin/prefer-custom-hooks": [
+      "warn",
+      { "allow": ["useCallback", "useRef", "useEffect", "useState"] }
+    ],
+    "promise/prefer-await-to-then": 0
+  },
+  "plugins": ["@kyleshevlin"],
+  "env": {
+    "jest/globals": true
+  }
+}
