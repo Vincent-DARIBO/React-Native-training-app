@@ -11,7 +11,7 @@ Created by [@Vincent-DARIBO](https://github.com/Vincent-DARIBO) and [@taniabezan
 
 ## General info
 
-this app brings together all the basic principles of creating an application. We created this application to apply our knowledge of React Native.
+This app brings together all the basic principles of creating an application. We created this application to apply our knowledge of React Native.
 You can find the concept of:
 
 - Internationalization (Manage the language used according to that of the device)
