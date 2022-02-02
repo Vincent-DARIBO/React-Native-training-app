@@ -44,10 +44,10 @@ Project is created with:
 	*  with CLI -> https://nodejs.org/en/download/package-manager/
 	*  with graphic interface -> https://nodejs.org/en/download/
 * Install expo with this command -> npm install --global expo-cli
-* Install react native
 
-To run this project, install it locally using yarn:
+### Run the project
 ```
+$ clone the repositorie in your computer using ``` git clone ```
 $ cd ../React-Native-training-app
 $ yarn install
 $ yarn start
