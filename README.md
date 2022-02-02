@@ -47,7 +47,7 @@ Project is created with:
 
 ### Run the project
 ```
-$ clone the repositorie in your computer using ``` git clone ```
+$ clone the repository in your computer using `git clone git@github.com:Vincent-DARIBO/React-Native-training-app.git`
 $ cd ../React-Native-training-app
 $ yarn install
 $ yarn start
