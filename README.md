@@ -27,11 +27,11 @@ You can find the concept of:
 	
 ## Technologies
 Project is created with:
-* React Native
+* React Native/Expo
 * React Navigation -> Navigation
 * React Native Paper -> Components and Theming
 * React i18 next -> Internationalization
-* DayJS -> Management of the date and its format
+* DayJS -> Date management and formatting
 * Jest -> testing
 * Mockaroo -> data for the tests
 * GraphQL -> backend with the API
