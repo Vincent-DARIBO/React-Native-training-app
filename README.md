@@ -40,10 +40,11 @@ Project is created with:
 ## Setup
 
 ### Pre requisit
- Markup : *Install node with CLI -> https://nodejs.org/en/download/package-manager/
+* Install node with CLI -> https://nodejs.org/en/download/package-manager/
  			with graphic interface -> https://nodejs.org/en/download/
- 	*Install expo with this command -> npm install --global expo-cli
-	*Install react native
+* Install expo with this command -> npm install --global expo-cli
+* Install react native
+
 To run this project, install it locally using yarn:
 ```
 $ cd ../React-Native-training-app
