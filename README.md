@@ -39,7 +39,7 @@ Project is created with:
 	
 ## Setup
 
-### Pre requisit
+### Prerequisites
 * Install node 
 	*  with CLI -> https://nodejs.org/en/download/package-manager/
 	*  with graphic interface -> https://nodejs.org/en/download/
