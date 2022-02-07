@@ -1,20 +1,11 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import {
-  Ionicons,
-  SimpleLineIcons,
-  FontAwesome,
-  MaterialIcons,
-  MaterialCommunityIcons,
-} from '@expo/vector-icons';
+import { SimpleLineIcons, MaterialIcons } from '@expo/vector-icons';
 import { useTheme } from '@react-navigation/native';
 import { useTranslation } from 'react-i18next';
 
 import RequestDetailsStack from '../navigation/RequestDetailsStack';
 import MoreScreenNav from '../navigation/MoreScreenNavigator';
-import ActionsDetailsStack from './ActionsDetailsStack';
-import TeamsDetailsStack from './TeamsDetailsStack';
-import AssignementsDetailsStack from './AssignmentsDetailsStack';
 import { BottomTabParamList } from './types/index';
 
 const Tab = createBottomTabNavigator<BottomTabParamList>();
@@ -42,29 +33,6 @@ export default function BottomBar() {
                     )}
                   />
                 );
-
-              case 'ActionsScreenNav':
-                return (
-                  <Ionicons
-                    name="sync-circle-outline"
-                    size={26}
-                    color={icon.color}
-                  />
-                );
-              case 'TeamsScreenNav':
-                return (
-                  <MaterialCommunityIcons
-                    name="account-group-outline"
-                    size={26}
-                    color={icon.color}
-                  />
-                );
-
-              case 'AssignementsScreenNav':
-                return (
-                  <FontAwesome name="user-o" size={26} color={icon.color} />
-                );
-
               case 'MoreScreenNav':
                 return (
                   <MaterialIcons
@@ -81,21 +49,6 @@ export default function BottomBar() {
           name="RequestsScreenNav"
           component={RequestDetailsStack}
           options={() => ({ title: t('tabs.requests'), headerShown: false })}
-        />
-        <Tab.Screen
-          name="ActionsScreenNav"
-          component={ActionsDetailsStack}
-          options={() => ({ title: t('tabs.actions'), headerShown: false })}
-        />
-        <Tab.Screen
-          name="TeamsScreenNav"
-          component={TeamsDetailsStack}
-          options={() => ({ title: t('tabs.teams'), headerShown: false })}
-        />
-        <Tab.Screen
-          name="AssignementsScreenNav"
-          component={AssignementsDetailsStack}
-          options={() => ({ title: t('tabs.assignments'), headerShown: false })}
         />
         <Tab.Screen
           name="MoreScreenNav"
