@@ -17,69 +17,73 @@ export default function DetailsCardIcons({ testID }: Props) {
   const { colors, icon } = useTheme();
   return (
     <View testID={testID}>
-      <View style={styles.ioniconsPositions}>
-        <View
-          style={{
-            ...styles.ioniconsContainer,
-            backgroundColor: icon.background,
-          }}
-          testID={CIRCLE_ICON}
-        >
-          <Ionicons
-            name="sync-circle-outline"
-            color={icon.drawings}
-            size={35}
-          />
+      <View style={styles.row}>
+        <View style={styles.ioniconsPositions}>
+          <View
+            style={{
+              ...styles.ioniconsContainer,
+              backgroundColor: icon.background,
+            }}
+            testID={CIRCLE_ICON}
+          >
+            <Ionicons
+              name="sync-circle-outline"
+              color={icon.drawings}
+              size={35}
+            />
+          </View>
+          <Text style={{ color: colors.accent }}>Actions</Text>
         </View>
-        <View
-          style={{
-            ...styles.ioniconsContainer,
-            backgroundColor: icon.background,
-          }}
-          testID={GIT_ICON}
-        >
-          <Ionicons name="git-network-sharp" color={icon.drawings} size={35} />
+        {/* git */}
+        <View style={styles.ioniconsPositions}>
+          <View
+            style={{
+              ...styles.ioniconsContainer,
+              backgroundColor: icon.background,
+            }}
+            testID={GIT_ICON}
+          >
+            <Ionicons
+              name="git-network-sharp"
+              color={icon.drawings}
+              size={35}
+            />
+          </View>
+          <Text style={{ color: colors.accent }}>Workflow</Text>
         </View>
-        <View
-          style={{
-            ...styles.ioniconsContainer,
-            backgroundColor: icon.background,
-          }}
-          testID={CHAT_ICON}
-        >
-          <Ionicons
-            name="chatbubble-ellipses-outline"
-            color={icon.drawings}
-            size={35}
-          />
+        {/* chat */}
+        <View style={styles.ioniconsPositions}>
+          <View
+            style={{
+              ...styles.ioniconsContainer,
+              backgroundColor: icon.background,
+            }}
+            testID={CHAT_ICON}
+          >
+            <Ionicons
+              name="chatbubble-ellipses-outline"
+              color={icon.drawings}
+              size={35}
+            />
+          </View>
+          <Text style={{ color: colors.accent }}>Comments</Text>
         </View>
-        <View
-          style={{
-            ...styles.ioniconsContainer,
-            backgroundColor: icon.background,
-          }}
-          testID={HELP_ICON}
-        >
-          <View>
+
+        {/* help */}
+        <View style={styles.ioniconsPositions}>
+          <View
+            style={{
+              ...styles.ioniconsContainer,
+              backgroundColor: icon.background,
+            }}
+            testID={HELP_ICON}
+          >
             <Ionicons
               name="help-circle-outline"
               color={icon.drawings}
               size={35}
             />
           </View>
-        </View>
-      </View>
-      <View style={styles.buttonTitlesContainer}>
-        <View style={styles.margin}>
-          <Text style={{ color: colors.accent }}>Actions</Text>
-        </View>
-        <View style={styles.margin}>
-          <Text style={{ color: colors.accent }}>Workflow</Text>
-        </View>
-        <View style={styles.margin}>
-          <Text style={{ color: colors.accent }}>Comments</Text>
-        </View>
-        <View style={styles.margin}>
           <Text style={{ color: colors.accent }}>Help</Text>
         </View>
       </View>
@@ -88,25 +92,21 @@ export default function DetailsCardIcons({ testID }: Props) {
 }
 const styles = StyleSheet.create({
   ioniconsPositions: {
-    position: 'absolute',
     justifyContent: 'center',
     alignItems: 'center',
-    flexDirection: 'row',
   },
-  buttonTitlesContainer: {
+  row: {
     flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingHorizontal: 20,
+    paddingTop: 30,
   },
+
   ioniconsContainer: {
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: 30,
-    marginLeft: 36,
-    width: '15%',
-    height: '88%',
+    width: 55,
+    height: 55,
     borderRadius: 50,
-  },
-  margin: {
-    marginTop: 85,
-    marginLeft: 45,
   },
 });
