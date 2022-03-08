@@ -34,8 +34,6 @@ Project is created with:
 * DayJS -> Date management and formatting
 * Jest -> testing
 * Mockaroo -> data for the tests
-* GraphQL -> backend with the API
-* React Query -> state management
 	
 ## Setup
 
