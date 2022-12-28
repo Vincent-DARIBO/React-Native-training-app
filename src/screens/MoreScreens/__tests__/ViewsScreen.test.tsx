@@ -1,5 +1,5 @@
 import '../../../shared/i18n/config';
-import React from 'react';
+import React, { ReactInstance, ReactInstance } from 'react';
 import { render, fireEvent } from '../../../tests/testUtil';
 import ViewsScreen from '../ViewsSreen';
 import { CARD, VIEWS_LIST, VIEWS_SCREEN } from '../../../tests/testIDs';
@@ -17,7 +17,7 @@ describe('ViewsScreen test', () => {
     const centerButton = queryByText('Open');
     const rightButton = queryByText('Closed');
 
-    //Testing that the list is sorted when the buttons are pressed
+    // Testing that the list is sorted when the buttons are pressed
     expect(viewsScreen).not.toBeNull();
     expect(viewsScreenList).not.toBeNull();
     expect(listItems).not.toBeNull();
@@ -27,9 +27,7 @@ describe('ViewsScreen test', () => {
   });
 
   it('Should displayed the list sorted when the all open and closed buttons are pressed', () => {
-    const { queryAllByTestId, queryByTestId, queryByText } = render(
-      <ViewsScreen />
-    );
+    const { queryAllByTestId, queryByText } = render(<ViewsScreen />);
     const leftButton = queryByText('All');
     const centerButton = queryByText('Open');
     const rightButton = queryByText('Closed');

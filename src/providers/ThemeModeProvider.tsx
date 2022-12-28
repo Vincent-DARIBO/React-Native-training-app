@@ -21,7 +21,6 @@ export function ThemeModeProvider({
   };
 
   return (
-    // Je n'y arrive pas
     <ThemeModeContext.Provider value={themeModeState}>
       {children}
     </ThemeModeContext.Provider>

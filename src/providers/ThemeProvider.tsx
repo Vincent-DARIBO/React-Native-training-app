@@ -3,7 +3,6 @@ import { Provider as PaperProvider } from 'react-native-paper';
 import { ThemeModeProvider } from './ThemeModeProvider';
 
 type Props = {
-  // J'ai un doute
   lightTheme: any;
   themeMode: string;
   setThemeMode: (themeMode: string) => void;

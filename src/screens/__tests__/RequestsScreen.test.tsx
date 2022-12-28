@@ -13,8 +13,6 @@ import {
 
 import RequestDetailsScreen from '../Requests/RequestDetailsScreen/RequestDetailsScreen';
 
-//TO DO: test the screen once it's loaded
-//  /*etudier le fonctionnement et la couverture de code */
 const Stack = createStackNavigator<RequestsStackParamList>();
 function Component() {
   return (
@@ -76,7 +74,7 @@ describe('RequestScreen test', () => {
   it('Should display the lists sorted when a button is pressed', async () => {
     const { findAllByTestId, findByTestId, debug } = render(<Component />);
 
-    //testing the sor function when pressign the buttons
+    // Testing the sor function when pressign the buttons
     const leftButton = await findByTestId(DOUBLE_BUTTONBAR_LEFT);
 
     // Should press on the leftButton and display open cards
@@ -93,36 +91,17 @@ describe('RequestScreen test', () => {
     // Should press on the rightButton and display all cards
     fireEvent.press(rightButton);
 
-    //Count all cards
+    // Count all cards
     const allCards = await findAllByTestId(CARD);
     // All the card should be displayed
     expect(allCards).not.toBeNull();
     expect(allCards.length).toBe(10);
-
-    //use scroll to look for the 11th item
-    // const requestsList = await findByTestId(REQUEST_LIST);
-    // expect(requestsList).not.toBeNull();
-    // // debug();
-
-    // const eventData = {
-    //   nativeEvent: {
-    //     contentSize: {
-    //       // Dimensions of the scrollable content
-    //       height: 500,
-    //       width: 100,
-    //     },
-    //     contentOffset: {
-    //       y: 200,
-    //     },
-    //   },
-    // };
-    // fireEvent.scroll(requestsList, eventData);
   });
 
   it('Should display the request details screen', async () => {
     const { findAllByTestId, queryByTestId } = render(<Component />);
 
-    //Should display the list of items
+    // Should display the list of items
     const listItems = await findAllByTestId(CARD);
     expect(listItems[0]).not.toBeNull();
 

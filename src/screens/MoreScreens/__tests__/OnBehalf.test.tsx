@@ -8,7 +8,7 @@ import { ON_BEHALF_SCREEN, ON_BEHALF_ICON } from '../../../tests/testIDs';
 import { MoreScreenNavigatorParamsList } from '../../../navigation/types/index';
 import OnBehalfScreen from '../OnBehalfScreen';
 import MoreScreen from '../MoreScreen';
-//TO DO: add the test of the alert
+
 const Stack = createStackNavigator<MoreScreenNavigatorParamsList>();
 
 const item = {
@@ -52,13 +52,13 @@ describe('OnBehalf test', () => {
     const onBehalfIcon = queryByTestId(ON_BEHALF_ICON);
     expect(onBehalfIcon).not.toBeNull();
 
-    //Testing that the text and the icon are displayed
+    // Testing that the text and the icon are displayed
     expect(onBehalfIcon.children).toHaveLength(2);
 
-    //Clicking on the icon
+    // Clicking on the icon
     fireEvent.press(onBehalfIcon.children[0]);
 
-    //Testing thaht OnBehalfScreen and the alert are displayed
+    // Testing thaht OnBehalfScreen and the alert are displayed
     const onBehalfScreenDisplay = queryByTestId(ON_BEHALF_SCREEN);
     const snackBar = queryByText('Cancel');
 
@@ -66,7 +66,7 @@ describe('OnBehalf test', () => {
     expect(queryByText('OnBehalfScreen')).not.toBeNull();
     expect(snackBar).not.toBeNull();
 
-    //Testing that after the button is pressed the OnBehalfScreen is not displayed anymore
+    // Testing that after the button is pressed the OnBehalfScreen is not displayed anymore
     fireEvent.press(snackBar);
     expect(queryByText('OnBehalfScreen')).toBeNull();
     expect(queryByTestId(ON_BEHALF_SCREEN)).toBeNull();

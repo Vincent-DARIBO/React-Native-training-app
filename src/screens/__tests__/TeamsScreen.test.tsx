@@ -12,7 +12,7 @@ import {
   DETAILS_SCREEN,
 } from '../../tests/testIDs';
 import TeamsScreen from '../Teams/TeamsScreen';
-//Question : dois-je vérifier que le teams screen soit null une fois que je suis dans le tem details et inversement ?
+
 const Stack = createStackNavigator<TeamsStackParamList>();
 const Component = () => {
   return (
@@ -74,7 +74,7 @@ describe('TeamsScreen test', () => {
     const leftButton = queryByTestId(DOUBLE_BUTTONBAR_LEFT);
     expect(leftButton).not.toBeNull();
 
-    //Testing that the list is sorted when the to do button is pressed
+    // Testing that the list is sorted when the to do button is pressed
     fireEvent.press(leftButton);
 
     // Should display the todoCards
@@ -82,11 +82,11 @@ describe('TeamsScreen test', () => {
     expect(todoCards).not.toBeNull();
     expect(todoCards.length).toBe(6);
 
-    //Should display the rightButton
+    // Should display the rightButton
     const rightButton = queryByTestId(DOUBLE_BUTTONBAR_RIGHT);
     expect(rightButton).not.toBeNull();
 
-    //should display the list sorted when the closed button is pressed
+    // Should display the list sorted when the closed button is pressed
     fireEvent.press(rightButton);
 
     // Should display the closed Cards
@@ -105,10 +105,10 @@ describe('TeamsScreen test', () => {
     expect(listItems).not.toBeNull();
     expect(listItems[0]).not.toBeNull();
 
-    //Testing that the details screen is displayed when pressing a card
+    // Testing that the details screen is displayed when pressing a card
     fireEvent.press(listItems[0]);
 
-    //Should display the entire details screen with each elements
+    // Should display the entire details screen with each elements
     expect(queryByTestId(DETAILS_SCREEN)).not.toBeNull();
     expect(queryByText('Request#35')).not.toBeNull();
     expect(queryByText('received')).not.toBeNull();
